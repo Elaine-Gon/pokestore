@@ -1,0 +1,35 @@
+div {
+  width: 500px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--gray-100);
+
+  display: flex;
+  align-items: center;
+
+  mat-icon {
+    margin-right: 8px;
+    font-size: 1.9rem;
+    color: var(--gray-200);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input {
+    background-color: transparent;
+    border: 0;
+    font-family: 'Poppins', sans-srif;
+  }
+
+  input::placeholder {
+    color: var(--gray-200);
+    font-size: 1.9rem;
+  }
+
+  input:focus {
+    outline: none;
+  }
+}

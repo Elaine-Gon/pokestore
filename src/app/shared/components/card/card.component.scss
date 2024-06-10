@@ -1,0 +1,24 @@
+div {
+  width: 338px;
+  height: 215px;
+  padding: 18px 34px;
+  border: 2px var(--blue-300) solid;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 146px;
+    height: 136px;
+  }
+
+  .title {
+    color: var(--blue-300);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+}

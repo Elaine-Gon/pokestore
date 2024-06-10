@@ -1,0 +1,47 @@
+div {
+  width: 100%;
+  padding: 9px 108px;
+
+  background: var(--blue-300);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+
+  div {
+    width: 50%;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  span {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    mat-icon {
+      font-size: 2.2rem;
+      display: flex;
+      align-items: center;
+    }
+
+    p {
+      margin: 0px;
+      font-size: 1.5rem;
+      a {
+        text-decoration: none;
+        color: var(--white);
+        font-weight: 700;
+
+        transition: filter 0.2s;
+        &:hover {
+          filter: brightness(0.9)
+        }
+      }
+    }
+  }
+}

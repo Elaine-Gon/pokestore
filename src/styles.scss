@@ -1,3 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+$typography: 'Poppins', sans-sarif;
+
+:root {
+  --white: #FFFFFF;
+
+  --yellow-500: #FFCB05;
+
+  --blue-100: #5E87A8;
+  --blue-300: #004278;
+
+  --gray-100: #F3F3F3;
+  --gray-200: #CCCCCC;
+  --gray-300: #8B8B8B;
+  --gray-500: #5F5F5F;
+
+  --green-500: #05D733;
+
+  font-size: 60%
+}
 
 * {
   margin: 0;
@@ -6,13 +27,23 @@
 }
 
 body {
+  font-family: $typography;
   -webkit-font-smoothing: antialiased;
 }
 
 body, input, textarea, button {
+  font-family: $typography;
   font-weight: 400;
   font-size: 1rem;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+button,
+a {
+  cursor: pointer;
+}
+
+[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
