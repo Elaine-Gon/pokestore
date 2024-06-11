@@ -7,7 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderModule } from './shared/components/header/header.module';
 import { NavBarModule } from './shared/components/nav-bar/nav-bar.module';
-import { CardModule } from './shared/components/card/card.module';
+import { HomeModule } from './views/home/home.module';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -19,7 +20,7 @@ import { CardModule } from './shared/components/card/card.module';
     HeaderModule,
     NavBarModule,
     HttpClientModule,
-    CardModule
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,24 +1,65 @@
-div {
-  width: 338px;
-  height: 215px;
-  padding: 18px 34px;
-  border: 2px var(--blue-300) solid;
-  border-radius: 10px;
+.main {
+  width: 100%;
+  padding: 50px 50px;
 
+  display: grid;
+  grid-template-columns: repeat(5, 30rem);
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+
+}
+
+.card {
+  width: 280px;
+  height: 300px;
+  padding: 28px 30px;
+  border: 2.5px var(--blue-300) solid;
+  border-radius: 10px;
+  background: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
   img {
-    width: 146px;
+    width: 7rem;
+    height: 7rem;
+    max-width: 8rem;
     height: 136px;
   }
 
   .title {
+    margin-top: 13px;
     color: var(--blue-300);
     font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
   }
+
+  .type {
+    color: var(--blue-300);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+  }
+
+  .price {
+    margin-top: 25px;
+    color: var(--blue-300);
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+   p {
+    color: var(--blue-300);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+   }
+
+   div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+   }
 }

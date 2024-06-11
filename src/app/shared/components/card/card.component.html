@@ -1,6 +1,10 @@
-<div class="card" *ngFor="let item of productData">
-  <img [src]="imagemPath + item.id + '.gif'"/>
-  <p class="title">Nome: {{item.name}} {{item.cardNumber}}</p>
-  <p>Tipo: {{item.type.tp1}}</p>
-  <p class="price">{{ item.price }}</p>
+<div class="main">
+  <div class="card" *ngFor="let item of productData">
+    <img [src]="imagemPath + item.id + '.gif'"/>
+    <div class="text">
+      <p class="title"> {{item.name}} {{item.cardNumber}} </p>
+      <p class="type">{{item.type.tp1  }} <br/> {{ item.type.tp2}} </p>
+      <p class="price"> R$ {{ item.price }},00 </p>
+    </div>
+  </div>
 </div>
