@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 
 import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
 
 
 
 @NgModule({
   exports: [
-    MatIconModule
+    MatIconModule,
+    MatDividerModule
   ]
 })
 export class AppMaterialModule { }

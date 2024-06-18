@@ -16,18 +16,12 @@ export class CardComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    // this.pokemonService.getData().subscribe((response: ProductsResponse[]) => {
-    //   this.productData = response;
-    //   console.log(this.productData)
-    // })
-
     this.getData()
   }
 
   getData() {
     this.pokemonService.getData().subscribe((data: Products[]) => {
       this.productData = data;
-      console.log(this.productData)
     })
   }
 }

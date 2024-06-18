@@ -12,7 +12,7 @@ export class PokemonService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getData(): Observable<Products[]> {
-    return this.httpClient.get<Products[]>(this.apiURL)
+  getData(page: number = 1, limit: number = 30): Observable<Products[]> {
+    return this.httpClient.get<Products[]>(`${this.apiURL}?page=${page}&limit=${limit}`);
   }
 }

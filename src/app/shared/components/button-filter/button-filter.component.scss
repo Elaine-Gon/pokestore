@@ -1,0 +1,27 @@
+@import "../../../../styles.scss";
+
+button {
+  width: 144px;
+  height: 35px;
+  padding: 9px 11px;
+  background: var(--white);
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  color: var(--blue-300);
+  font-family: $typography;
+  font-size: 12px;
+  font-weight: 700;
+
+  mat-icon {
+    color: var(--blue-300);
+    font-size: 19px;
+    margin-right: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
