@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ReactiveFormsModule, FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
 import { AuthService } from 'src/app/core/service/auth.service';
-import { User } from './user';
+import { User } from '../../../core/model/user';
 
 @Component({
   selector: 'app-modal-login',
