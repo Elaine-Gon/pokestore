@@ -7,14 +7,14 @@ import { User } from 'src/app/shared/components/modal-login/user';
 })
 export class AuthService {
   private readonly validUser = {
-    name: 'teste@email',
+    email: 'teste@email',
     password: '0000'
   };
 
   constructor(private router: Router) { }
 
   onLogin(user: User | null | undefined): boolean {
-    if (user && user.name === this.validUser.name && user.password === this.validUser.password) {
+    if (user && user.email === this.validUser.email && user.password === this.validUser.password) {
       localStorage.setItem('userAuth', 'true');
       this.router.navigate(['/home']); // ou qualquer rota que você desejar
       return true;

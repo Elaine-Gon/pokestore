@@ -32,7 +32,7 @@ export class ModalLoginComponent{
 
    public submit() {
     const user: User = {
-      name: this.profileForm.value.email,
+      email: this.profileForm.value.email,
       password: this.profileForm.value.password
     };
 
