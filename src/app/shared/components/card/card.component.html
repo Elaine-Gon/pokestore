@@ -1,6 +1,8 @@
 <div class="main">
   <div class="card" *ngFor="let item of productData">
-    <img [src]="imagemPath + item.id + '.gif'"/>
+    <div class="img">
+      <img [src]="imagemPath + item.id + '.gif'"/>
+    </div>
     <div class="text">
       <p class="title"> {{item.name}} {{item.cardNumber}} </p>
       <p class="type"> {{ item.type.tp1  }} <br/> {{ item.type.tp2}} </p>

@@ -47,3 +47,8 @@ a {
   cursor: not-allowed;
 }
 
+// como alterar o estilo global do angular material
+.custom-container .mat-mdc-dialog-container {
+  --mdc-dialog-container-shape: 20px;
+}
+

@@ -1,0 +1,16 @@
+<main>
+  <div>
+    <h1>
+      Faça seu login
+    </h1>
+     <form [formGroup]="profileForm" (ngSubmit)="submit()">
+      <input placeholder="E-mail" type="text" formControlName="email" required/>
+      <input placeholder="Senha" type="password"  formControlName="password" required/>
+
+      <p>Esqueci minha <a>senha</a></p>
+
+      <button type="submit">Entrar</button>
+     </form>
+     <p>Não um conta? <a>Registre-se</a></p>
+  </div>
+</main>

@@ -8,6 +8,10 @@ import { AppComponent } from './app.component';
 import { HeaderModule } from './shared/components/header/header.module';
 import { NavBarModule } from './shared/components/nav-bar/nav-bar.module';
 import { HomeModule } from './views/home/home.module';
+import { LoginModule } from './views/login/login.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AuthService } from './core/service/auth.service';
+
 
 @NgModule({
   declarations: [
@@ -20,9 +24,14 @@ import { HomeModule } from './views/home/home.module';
     HeaderModule,
     NavBarModule,
     HttpClientModule,
-    HomeModule
+    HomeModule,
+    LoginModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

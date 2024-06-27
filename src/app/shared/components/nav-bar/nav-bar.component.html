@@ -3,7 +3,7 @@
   <div>
     <span>
       <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="person"></mat-icon>
-      <p>Faça seu  <a [routerLink]="['/']">Login</a> ou  <a [routerLink]="['/']">Cadastre-se</a></p>
+      <p>Faça seu  <a (click)="openDialogLogin()">Login</a> ou  <a (click)="openDialogRegister()">Cadastre-se</a></p>
     </span>
     <span>
       <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="shopping_cart"></mat-icon>
