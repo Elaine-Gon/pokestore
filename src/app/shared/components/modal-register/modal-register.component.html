@@ -4,13 +4,13 @@
     Crie sua conta
   </h1>
   <form>
-    <input placeholder="Nome" type="text"/>
-    <input placeholder="E-mail" type="text"/>
-    <input placeholder="Senha" type="text"/>
-    <input placeholder="Confirme sua senha" type="text"/>
+    <input placeholder="Nome" type="text" formControlName="name"/>
+    <input placeholder="E-mail" type="text" formControlName="email"/>
+    <input placeholder="Senha" type="password" formControlName="password"/>
+    <input placeholder="Confirme sua senha" type="password" formControlName="confirmPassword"/>
 
     <p>Ao se registrar, você aceita nossos <a> termos de uso</a> e a nossa <a>política de privacidade</a></p>
-    <button>CADASTRAR</button>
+    <button type="submit">CADASTRAR</button>
   </form>
  </div>
 </main>

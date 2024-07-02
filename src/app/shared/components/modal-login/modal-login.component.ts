@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { ReactiveFormsModule, FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { Component } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
 import { AuthService } from 'src/app/core/service/auth.service';
-import { User } from '../../../core/model/user';
+import { User } from 'src/app/core/model/user';
 
 @Component({
   selector: 'app-modal-login',
@@ -30,7 +30,7 @@ export class ModalLoginComponent{
     this.dialogRef.close();
   }
 
-   public submit() {
+  submit() {
     const user: User = {
       email: this.profileForm.value.email,
       password: this.profileForm.value.password
@@ -44,5 +44,4 @@ export class ModalLoginComponent{
       console.log('Login failed');
     }
   }
-
 }
